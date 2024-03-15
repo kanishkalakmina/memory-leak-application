@@ -51,3 +51,39 @@ const About = () => {
 };
 
 export default About;
+
+// import React from 'react';
+// import { useQuery } from 'react-query';
+
+// const About = () => {
+//     const { data, isLoading, isError } = useQuery('aboutData', async () => {
+//         const response = await fetch('https://939997652e824928b7aad296d43a6d16.api.mockbin.io/');
+//         if (!response.ok) {
+//             throw new Error('Failed to fetch data');
+//         }
+//         return response.json();
+//     });
+
+//     if (isLoading) {
+//         return <div>Loading About Page...</div>;
+//     }
+
+//     if (isError) {
+//         return <div>Error fetching data</div>;
+//     }
+
+//     return (
+//         <div>
+//             <h1>About Page</h1>
+//             <div>
+//                 {data && (
+//                     <div>
+//                         <pre>{JSON.stringify(data, null, 2)}</pre>
+//                     </div>
+//                 )}
+//             </div>
+//         </div>
+//     );
+// };
+
+// export default About;

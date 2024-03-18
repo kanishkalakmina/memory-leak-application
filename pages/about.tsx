@@ -44,7 +44,7 @@ const About = () => {
 export default About;
 
 
-
+//==================================================Abort Controller=================================================================
 
 // import React, { useState, useEffect } from 'react';
 // const About = () => {
@@ -104,6 +104,11 @@ export default About;
 // };
 
 // export default About;
+
+
+//==================================================React Query=================================================================
+
+
 
 // import React from 'react';
 // import { useQuery } from 'react-query';

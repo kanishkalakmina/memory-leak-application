@@ -46,6 +46,72 @@ const Home = () => {
 
 export default Home;
 
+//==================================================Abort Controller=================================================================
+
+// import React, { useState, useEffect } from 'react';
+
+// const Home = () => {
+//     const [data, setData] = useState([]);
+//     const [loading, setLoading] = useState(true);
+
+//     useEffect(() => {
+//         const controller = new AbortController();
+//         const signal = controller.signal;
+//         const fetchData = async () => {
+           
+//             try {
+//                 const response = await fetch('https://89d7afb7090e4521997a00b34ec7743e.api.mockbin.io/', { signal });
+    
+//                 if (!response.ok) {
+//                     throw new Error('Failed to fetch data');
+//                 }
+    
+//                 const data = await response.json();
+    
+//                 if (!signal.aborted) {
+//                     setData(data);
+//                     setLoading(false);
+//                 }
+//             } catch (error: any) {
+//                 if (error.name === "AbortError") {
+//                     console.log("Cancelled...!");
+//                 }
+//             }
+//         };
+    
+//         fetchData();
+    
+//         return () => {
+//             controller.abort();
+//         };
+//     }, []);
+    
+
+//     return ( 
+//         <div>
+//             <h1>Home Page</h1>
+//             {loading ? (
+//                 <div>Loading Home Page...</div> 
+//             ) : (
+//                 <div>
+//                     {data && (
+//                         <div>
+//                             <pre>{JSON.stringify(data, null, 2)}</pre>
+//                         </div>
+//                     )}
+//                 </div>
+//             )}
+//         </div>
+//     );
+// };
+
+
+
+//==================================================React Query=================================================================
+
+
+// export default Home;
+
 // import React from 'react';
 // import { useQuery } from 'react-query';
 

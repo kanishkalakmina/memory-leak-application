@@ -1,3 +1,8 @@
+
+![image](https://github.com/kanishkalakmina/memory-leak-application/assets/62955574/40d2c1bf-83cd-4e74-a683-a1687ce5038c)
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
